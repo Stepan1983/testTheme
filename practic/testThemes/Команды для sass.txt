@@ -1,0 +1,22 @@
+Проверяем наличие
+
+node -v
+npm -v 
+
+Устанавливаем пакеты
+
+npm install
+
+Запускаем компиляцию
+
+npm run watch
+
+Устанавливаем sass
+
+npm install node-sass
+npm install sass
+
+Проверяем установленный sass
+
+npm list node-sass
+
