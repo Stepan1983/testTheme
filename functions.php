@@ -19,7 +19,8 @@ function testthemes_setup()
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     register_nav_menus(array(
-        'menu-1' => esc_html__('Primary', 'testthemes'),
+        'menu-1' => esc_html__('Primary', 'testhemes'),
+		'main-menu' => esc_html__('MainMenu', 'testthemes'),
     ));
     add_theme_support(
         'html5',
@@ -95,5 +96,4 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
     require get_template_directory() . '/inc/jetpack.php';
 }
-
 

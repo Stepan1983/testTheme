@@ -45,20 +45,19 @@
         </div>
     </div>
     <div class="main-nav">
-        <ul class="header-menu">
-            <li>HOME</li>
-            <li>STORE</li>
-            <li>ACCESSORIES</li>
-            <li>BRAND</li>
-            <li>PAGES</li>
-            <li>ABOUT US</li>
-            <li>NEWS</li>
-            <li>CONTACT US</li>
-        </ul>
-    </div>
-    <div class="search-form">
-        <input type="text" class="search-input">
-        <button type="submit" class="search-button">Search</button>
+    <?php
+    wp_nav_menu( array(
+  'theme_location' => 'MainMenu',
+  'container' => false,
+  'menu_class' => 'header-menu',
+) );
+    ?>
+</div>
+<div>
+        <form class="search-form">
+          <input type="text" class="search-input">
+          <button type="submit" class="search-button">Search</button>
+        </form>
     </div> 
     <div class="header-badge">
         <div class="shipping">
@@ -75,5 +74,8 @@
         </div>
     </div>
 </div>
+    </div>
+    
 
 	</header><!-- #masthead -->
+	

@@ -1059,12 +1059,25 @@ ul {
   width: 100%;
   font-size: 1rem;
   font-weight: 700;
+  white-space: nowrap
 }
 
-li {
-  margin-right: 20px; 
-  
+.header-menu li {
+  margin-right: 20px;
 }
+
+.header-menu li a {
+  text-decoration: none;
+  color: #000; 
+}
+
+
+li a {
+  margin-right: 20px;
+  text-decoration: none !important;
+}
+
+
 .search-form{
   display: flex;
   justify-content: center; 
@@ -1120,6 +1133,8 @@ li {
   font-weight: 700;
 
 }
+
+
 
 
 
